@@ -1,0 +1,12 @@
+#IDEs
+.idea/
+.vscode/
+.vs/
+
+# CMake
+.cmake/
+CMakeFiles/
+CMakeCache.txt
+
+build/
+main
