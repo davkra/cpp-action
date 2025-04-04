@@ -14,10 +14,14 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Configure CMake 
-      run: cmake .
+      run: |
+        cd myproject
+        cmake .
     - name: Run Make
-      run: make
-
+      run: |
+        cd myproject
+        make
     - name: Run Main
-
-      run: ./myproject
+      run: |
+        cd myproject
+        ./myproject
