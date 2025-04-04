@@ -16,6 +16,12 @@ jobs:
     - name: Configure CMake 
       run: cmake --preset x64 .
     - name: Run Make
-      run: make
+      run: |
+        cd  out/build/x64
+        make
+
     - name: Run Main
-      run: ./myproject
+
+      run: |
+        cd  out/build/x64
+        ./myproject
