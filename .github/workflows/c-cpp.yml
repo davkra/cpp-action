@@ -17,11 +17,11 @@ jobs:
       run: cmake --preset x64 .
     - name: Run Make
       run: |
-        cd  out/build/x64
+        cd  /home/runner/work/cpp-action/cpp-action/out/build/x64
         make
 
     - name: Run Main
 
       run: |
-        cd  out/build/x64
+        cd  /home/runner/work/cpp-action/cpp-action/out/install/x64
         ./myproject
