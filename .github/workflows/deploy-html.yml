@@ -1,0 +1,19 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: [ "feature/#4-github-pages" ]
+  pull_request:
+    branches: [ "feature/#4-github-pages" ]
+jobs:
+  deploy-index:
+    runs-on: ubuntu-latest
+    concurrency: ${{ github.ref }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
