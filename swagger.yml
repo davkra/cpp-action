@@ -1,6 +1,6 @@
 openapi: 3.0.4
 info:
-  title: Swagger Petstore - OpenAPI 3.0
+  title: Swagger Petstore Documentation - OpenAPI 3.0.4
   termsOfService: https://swagger.io/terms/
   contact:
     email: apiteam@swagger.io
