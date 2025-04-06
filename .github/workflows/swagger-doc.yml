@@ -1,11 +1,9 @@
 name: Swagger Documentation CI
-
 on:
   push:
-    branches: [ "feature/#3-swagger-ui" ]
+    branches: [ "develop", "main" ]
   pull_request:
-    branches: [ "feature/#3-swagger-ui" ]
-
+    branches: [ "develop", "main" ]
 jobs:
   generate-openapi-spec:
     runs-on: ubuntu-latest
