@@ -1,6 +1,7 @@
 openapi: 3.0.4
 info:
   title: Swagger Petstore Documentation - OpenAPI 3.0.4
+  description: This is a sample server Petstore server.
   termsOfService: https://swagger.io/terms/
   contact:
     email: apiteam@swagger.io
